@@ -81,13 +81,13 @@ export const Create = () => {
       <div className="py-2 mx-3">
         <GoBack to="/" />
       </div>
-      <div className="px-20">
+      <div className="px-20 md-px-10">
         <h4 className="text-center mt-4 mb-4 text-4xl text-skin-primary font-bold">
           Create Event
         </h4>
 
         <div className="max-w-full flex justify-center pb-10 pt-3 flex mx-auto overflow-hidden md:max-w-full">
-          <div className="w-6/12 px-5">
+          <div className="w-6/12 md-w-100 px-5">
             <form onSubmit={onSubmit}>
               {EVENT_CREATE.map((props) => (
                 <Input
@@ -111,7 +111,7 @@ export const Create = () => {
               </div>
             </form>
           </div>
-          <div className="w-6/12">
+          <div className="w-6/12 md-hidden">
             <img src={form.preview || getImage("create")} alt="create" />
           </div>
         </div>

@@ -39,8 +39,8 @@ export const Event = () => {
   return (
     <>
       <GoBack to="/" />
-      <div className="px-48 py-12">
-        <div className="max-w-full py-10 flex mx-auto overflow-hidden md:max-w-full justify-between">
+      <div className="px-48 py-12 md-px-10">
+        <div className="max-w-full md-column-rev md-column-center py-10 flex mx-auto overflow-hidden md:max-w-full justify-between">
           <div>
             <div className="flex items-start flex-col h-full justify-start p-10">
               <EditInput
@@ -110,7 +110,7 @@ export const Event = () => {
               <div></div>
             </div>
           </div>
-          <div className="md:shrink-0">
+          <div className="md:shrink-0 md-order-1">
             <img
               className="h-80 w-full object-cover md:h-full md:w-80"
               src={preview || getImage("event")}
